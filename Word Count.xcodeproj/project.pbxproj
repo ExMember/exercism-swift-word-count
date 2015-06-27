@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D64DFBC1B3E5C2100CFD0A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "Word CountTests/README.md"; sourceTree = "<group>"; };
 		6DFA8EDA1B1D1DE1008E11F2 /* Word Count.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word Count.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFA8EDE1B1D1DE1008E11F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DFA8EDF1B1D1DE1008E11F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		6DFA8ED11B1D1DE1008E11F2 = {
 			isa = PBXGroup;
 			children = (
+				6D64DFBC1B3E5C2100CFD0A9 /* README.md */,
 				6DFA8EDC1B1D1DE1008E11F2 /* Word Count */,
 				6DFA8EF21B1D1DE1008E11F2 /* Word CountTests */,
 				6DFA8EDB1B1D1DE1008E11F2 /* Products */,
@@ -415,6 +417,7 @@
 				6DFA8EFB1B1D1DE1008E11F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DFA8EFC1B1D1DE1008E11F2 /* Build configuration list for PBXNativeTarget "Word CountTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +426,7 @@
 				6DFA8EFE1B1D1DE1008E11F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
