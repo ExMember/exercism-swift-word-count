@@ -1,36 +1,61 @@
-//
-//  Word_CountTests.swift
-//  Word CountTests
-//
-//  Created by Damien Burke on 6/1/15.
-//  Copyright (c) 2015 Damien Burke. All rights reserved.
-//
-
-import UIKit
 import XCTest
 
-class Word_CountTests: XCTestCase {
+/*
+
+This version of the tests has been proved to have some problems with Xcode 6 Beta 5 (Up to 6.0.0)
+If the tests won't compile and gives you the error Type '[String : Int]' does not conform to protocol 'Equatable',
+please update your Xcode to the stable version 6.0.1 or higher.
+
+*/
+
+class WordCountTest: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testCountOneWord() {
+        let words = WordCount(words: "word")
+        let expected = ["word": 1]
+        let result = words.count()
+        
+        XCTAssertEqual(expected, result)
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testCountOneOfEeach() {
+        let words = WordCount(words: "one of each")
+        let expected = ["one" : 1, "of" : 1, "each" : 1 ]
+        let result = words.count();
+        
+        XCTAssertEqual(expected, result)
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testCountMultipleOccurrences() {
+        let words = WordCount(words: "one fish two fish red fish blue fish")
+        let expected = ["one" : 1, "fish" : 4, "two" : 1, "red" : 1, "blue" : 1 ]
+        let result = words.count()
+        
+        XCTAssertEqual(expected, result)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    func testIgnorePunctation() {
+        let words = WordCount(words: "car : carpet as java : javascript!!&$%^&")
+        let expected = ["car" : 1, "carpet" : 1, "as" : 1, "java" : 1, "javascript" : 1 ]
+        let result = words.count()
+        
+        XCTAssertEqual(expected, result)
+    }
+    
+    func testIncludeNumbers() {
+        let words = WordCount(words: "testing, 1, 2 testing")
+        let expected = [ "testing" : 2, "1" : 1, "2" : 1 ]
+        let result = words.count()
+        
+        XCTAssertEqual(expected, result)
+    }
+    
+    func testNormalizeCase() {
+        let words = WordCount(words:"go Go GO")
+        let expected = [ "go" : 3]
+        let result = words.count()
+        
+        XCTAssertEqual(expected, result)
     }
     
 }

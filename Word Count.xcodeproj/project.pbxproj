@@ -13,6 +13,8 @@
 		6DFA8EE71B1D1DE1008E11F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFA8EE61B1D1DE1008E11F2 /* Images.xcassets */; };
 		6DFA8EEA1B1D1DE1008E11F2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFA8EE81B1D1DE1008E11F2 /* LaunchScreen.xib */; };
 		6DFA8EF61B1D1DE1008E11F2 /* Word_CountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFA8EF51B1D1DE1008E11F2 /* Word_CountTests.swift */; };
+		6DFA8F001B1D1E22008E11F2 /* WordCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFA8EFF1B1D1E22008E11F2 /* WordCount.swift */; };
+		6DFA8F011B1D1E22008E11F2 /* WordCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFA8EFF1B1D1E22008E11F2 /* WordCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		6DFA8EEF1B1D1DE1008E11F2 /* Word CountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Word CountTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFA8EF41B1D1DE1008E11F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DFA8EF51B1D1DE1008E11F2 /* Word_CountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word_CountTests.swift; sourceTree = "<group>"; };
+		6DFA8EFF1B1D1E22008E11F2 /* WordCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 				6DFA8EE61B1D1DE1008E11F2 /* Images.xcassets */,
 				6DFA8EE81B1D1DE1008E11F2 /* LaunchScreen.xib */,
 				6DFA8EDD1B1D1DE1008E11F2 /* Supporting Files */,
+				6DFA8EFF1B1D1E22008E11F2 /* WordCount.swift */,
 			);
 			path = "Word Count";
 			sourceTree = "<group>";
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DFA8F001B1D1E22008E11F2 /* WordCount.swift in Sources */,
 				6DFA8EE21B1D1DE1008E11F2 /* ViewController.swift in Sources */,
 				6DFA8EE01B1D1DE1008E11F2 /* AppDelegate.swift in Sources */,
 			);
@@ -222,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DFA8EF61B1D1DE1008E11F2 /* Word_CountTests.swift in Sources */,
+				6DFA8F011B1D1E22008E11F2 /* WordCount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
